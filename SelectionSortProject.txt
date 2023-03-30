@@ -1,0 +1,30 @@
+ [22,27,16,2,18,6] -> Insertion Sort
+ //Her turda en küçük eleman yerine yerleştirilir.
+ //İlk eleman sırayla diğer elemanlarla ikili olarak karşılaştırılır.
+ //Küçük olan hafızada tutularak karşılaştırılmaya devam edilir.
+ //Tüm dizi taranınca en küçük eleman bulunmuş olur ve ilk sıradaki eleman ile en küçük sayının yeri değiştirilir.
+ //Sırasıyla tüm elemanlar için bu takaslama yapılır.
+
+1) Dizinin sıralanması 
+ // orijinal dizi : [22,27,16,2,18,6]
+ // 2 ile 22 yer değiştirdi. İlk eleman bulundu: [2,27,16,22,18,6]
+ // 6 ile 27 Yer değiştirdi. 2. eleman yerleştirildi: [2,6,16,22,18,27]
+ // 16 için tarama yapıldı. Daha küçük bir sayı bulunamadı. Değişiklik olmadı: [2,6,16,22,18,27]
+ // 22 ile taramaya başlandı. 18 ile yer değiştirdi: [2,6,16,18,22,27]
+ // Sırasıyla son iki eleman için de tarama yapılır. Sıralama doğru olduğu için değişiklik yapılmaz.
+ 
+2) Big-O gösterimi
+  // O(n^2)
+  
+3) Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer? Yazınız
+
+	Average case: Aradığımız sayının ortada olması
+	Worst case: Aradığımız sayının sonda olması
+	Best case: Aradığımız sayının dizinin en başında olması.
+ // Avarage case 
+ 
+4) [7,3,5,8,2,9,4,15,6] dizisinin Selection Sort'a göre ilk 4 adımını yazınız.
+// [2,3,5,8,7,9,4,15,6]
+// [2,3,5,8,7,9,4,15,6]
+// [2,3,4,8,7,9,5,15,6]
+// [2,3,4,5,7,9,8,15,6]
