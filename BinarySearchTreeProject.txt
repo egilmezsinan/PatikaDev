@@ -1,0 +1,24 @@
+Proje 3 
+[7, 5, 1, 8, 3, 6, 0, 9, 4, 2] dizisinin Binary-Search-Tree aşamalarını yazınız.
+
+Örnek: root x'dir. root'un sağından y bulunur. Solunda z bulunur vb.
+//Root için bir değer seçilir. Sıradaki değer küçük ise soluna, büyük ise sağına yerleştirilerek sıralama yapılır.
+
+         7
+       /   \
+      5     8
+     / \     \
+    1   6     9
+   / \
+  0   3
+     / \
+    2   4
+// İlk olarak ilk değer root seçerek başlanır.
+// 2. eleman olan 5 değeri 7den küçük olduğu için alt soluna yerleşir.
+// 3. eleman 1 değeri 5 değerinden küçük olduğu için 5 değerinin sol altına yerleşir.
+// 4. eleman 8 değeridir ve üstteki tüm değerlerden büyük olduğu için sırasıyla her değerle karşılaştırılarak root değere kadar çıkılır. Root değerden büyük olduğu için sağ altına yerleşir.
+// 5. eleman diğer değerlerden küçük olduğu için 1 değerine kadar iner. 1 değerinden büyük olduğu için sağ altına yerleşir.
+// 6. eleman root ile karşılatırılır. Küçük olduğu için soldan devam ederek 5 ile karşılaştırılır. Büyük olduğu için sağ altına yerleşir. 
+// 7. eleman sıfırdır. Roottan itibaren tüm değerlerde soldan devam eder ve 1 değerinin sol altına yazılır. 
+// 8. eleman 9 değeridir ve soottan büyük olduğu için sağdan devam ederek ilerler. 8 değerinden de büyük olduğu için sağ altına yazılır.
+// Aynı kurallar takip edilerek 2 ve dört değerleri 3 değerinin altında sol ve sağ olarak konumlanır.
